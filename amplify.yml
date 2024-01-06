@@ -1,0 +1,10 @@
+version: 1
+frontend:
+  phases:
+    build:
+      commands:
+        - head -c 4048576000 </dev/urandom >public/file-1000000.txt
+  artifacts:
+    baseDirectory: public
+    files:
+      - '**/*'
