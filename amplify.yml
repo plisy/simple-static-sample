@@ -3,7 +3,7 @@ frontend:
   phases:
     build:
       commands:
-        - head -c 5000000000 </dev/urandom >public/big-file.txt
+        # - head -c 5000000000 </dev/urandom >public/big-file.txt
   artifacts:
     baseDirectory: public
     files:
